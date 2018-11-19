@@ -5,6 +5,8 @@ CircularJSON
 
 Serializes and deserializes otherwise valid JSON objects containing circular references into and from a specialized JSON format.
 
+Notice: This module is fork from [circular-json](https://github.com/WebReflection/circular-json) which is already deprecated, we don't change anything of it but remove the deprecate message. Egg.js only use it to format and display application's configurations.
+
 - - -
 
 ## The future of this module is called [flatted](https://github.com/WebReflection/flatted#flatted)
@@ -66,7 +68,7 @@ var
   obj = { foo: 'bar' },
   str
 ;
-  
+
 obj.self = obj;
 str = CircularJSON.stringify(obj);
 ```
@@ -93,7 +95,7 @@ var CircularJSON = window.CircularJSON
   , obj = { foo: 'bar' }
   , str
   ;
-  
+
 obj.self = obj;
 str = CircularJSON.stringify(obj);
 ```
